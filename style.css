@@ -19,7 +19,7 @@
 /* Header Styles and Background */
 
 body {
-    background-color: var(--main-bg);
+    background-color: #232631;
     font-family: "Space Grotesk", sans-serif;
     display: flex;
     height: 100vh;
@@ -27,30 +27,32 @@ body {
     align-items: center;
     padding: 40px;
 }
+.background {
+    background-color: var(--main-bg);
+}
 
 header {
     display: flex;
     align-items: center;
     padding: 5px;
-    background-color: var(--background-cards);
+    background-color: var(--main-bg);
 }
 
 header p {
     color: var(--main-text);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 header img {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
 }
 
 /* Container Styles */
 
 .container{
-    width: 650px;
+    width: 550px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -59,31 +61,56 @@ header img {
 h1{
     color: var(--main-text);
     text-align:center;
-    font-size:55px;
-    margin-bottom:30px;
+    font-size: 40px;
+    margin: 30px 100px 30px 100px;
 }
 
 textarea{
-    width:100%;
-    height:180px;
+    width: 90%;
+    height: 150px;
     background-color: var(--background-cards);
-    border:2px solid var(--edges);
-    border-radius:15px;
-    padding:20px;
+    border: 2px solid var(--edges);
+    border-radius: 15px;
+    padding: 20px;
     color: var(--secondary-text);
-    font-size:18px;
-    resize:none;
+    font-size: 18px;
+    resize: none;
+    display: block;
+    margin: 0 auto;
 }
 
 label{
     color: var(--secondary-text);
-    font-size:18px;
-    margin-top:20px;
-    margin-bottom:10px;
+    font-size: 10px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.excludeSpaces{
+    margin-left: 30px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 2px solid var(--secondary-text);
+    background: transparent;
+    border-radius: 4px;
+}
+
+.options{
+    display: flex;
+    gap: 20px;
 }
 
 .timer{
     color: var(--secondary-text);
-    font-size:16px;
-    margin-top:10px;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    display: flex;
+    margin-left:auto
 }
