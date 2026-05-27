@@ -19,19 +19,71 @@
 /* Header Styles and Background */
 
 body {
-    background-color: #10101A;
+    background-color: var(--main-bg);
     font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 header {
     display: flex;
     align-items: center;
     padding: 5px;
-    background-color: yellowgreen;
+    background-color: var(--background-cards);
+}
+
+header p {
+    color: var(--main-text);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 header img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+/* Container Styles */
+
+.container{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+h1{
+    color: var(--main-text);
+    text-align:center;
+    font-size:55px;
+    margin-bottom:30px;
+}
+
+textarea{
+    width:100%;
+    height:180px;
+    background-color: var(--background-cards);
+    border:2px solid var(--edges);
+    border-radius:15px;
+    padding:20px;
+    color: var(--secondary-text);
+    font-size:18px;
+    resize:none;
+}
+
+label{
+    color: var(--secondary-text);
+    font-size:18px;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.timer{
+    color: var(--secondary-text);
+    font-size:16px;
+    margin-top:10px;
 }

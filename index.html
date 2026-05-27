@@ -11,10 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
     <header>
         <img src="./assets/images/Copilot_20260526_233650-removebg-preview.png" alt="Logo">
         <p>Character Counter</p>
     </header>
-    
+
+    <div>
+        <h1>Analyze your text in real-time</h1>
+        <textarea id="Text" placeholder="Type your text here..."></textarea>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox" id="analyzeText">
+            Exclude Spaces
+        </label>
+
+        <label>
+            <input type="checkbox" id="analyzeText">
+            Set Character Limit
+        </label>
+
+        <p class="timer">Approx. reading time: <1 minute </p>
+    </div>
+</div>
+
 </body>
 </html>
