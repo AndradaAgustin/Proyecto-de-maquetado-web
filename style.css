@@ -3,3 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-bg: #12131A;
+    --background-cards: #1C1F2A;
+    --main-text: #F2F2F7;
+    --secondary-text: #B4B7C9;
+    --card-violet: #C99DFF;
+    --card-orange: #FFB21E;
+    --card-coral: #FF8A65;
+    --progress-bars: #D19BFF;
+    --edges: #2A2D3A;
+}
+
+/* Header Styles and Background */
+
+body {
+    background-color: #10101A;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: yellowgreen;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
