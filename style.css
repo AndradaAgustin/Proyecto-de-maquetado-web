@@ -35,8 +35,15 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     background-color: var(--main-bg);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 header p {
@@ -80,6 +87,8 @@ textarea {
     margin:0px;
 }
 
+/* Checkboxes */
+
 label {
     color: var(--secondary-text);
     font-size: 10px;
@@ -94,8 +103,24 @@ input[type="checkbox"]{
     width: 13px;
     height: 13px;
     border: 2px solid var(--secondary-text);
-    background: transparent;
     border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Cuando se marca */
+.check:checked{
+    background: white;
+}
+
+.check:checked::after{
+    content: "✓";
+    color: black;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bold;
 }
 
 .options {
@@ -144,4 +169,20 @@ input[type="checkbox"]{
 
 .count {
     font-size: 36px;
+}
+
+/* Boton de cambio de color */
+.change-color {
+    background: var(--background-cards);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 9px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.change-color img {
+    width: 12px;
+    height: 12px;
 }
