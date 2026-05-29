@@ -1,7 +1,7 @@
 # 📘 Proyecto de Maquetado Web
 
 ## 📌 Descripción
-Este proyecto es un **trabajo práctico** en el cual se crean métricas que luego serán integradas con **JavaScript** para añadir interactividad y dinamismo.
+Este proyecto es un **trabajo práctico** en el cual se crean métricas a las que luego le agregaremos **JavaScript** para añadir interactividad y dinamismo.
 
 ## 🛠️ Tecnologías utilizadas
 - **HTML5** → estructura del contenido de la aplicación.  
