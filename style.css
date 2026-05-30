@@ -152,25 +152,28 @@ input[type="checkbox"]{
 }
 
 .purple-card {
-    background-color: var(--card-violet);
-    padding: 15px 15px 15px 8px;
+    background-image:url('assets/images/Violet-card.png');
+    background-size: cover;
+    padding: 14px 15px 18px 8px;
+    border-radius: 10px;
+}
+
+.yellow-card {
+    background-image:url('assets/images/Yellow-card.png');
+    background-size: cover;
+    padding: 18px 15px 18px 8px;
     border-radius: 10px;
 }
 
 .orange-card {
-    background-color: var(--card-orange);
-    padding: 15px 15px 15px 8px;
-    border-radius: 10px;
-}
-
-.red-card {
-    background-color: var(--card-coral);
-    padding: 15px 15px 15px 8px;
+    background-image:url('assets/images/Orange-card.png');
+    background-size: cover;
+    padding: 18px 15px 18px 8px;
     border-radius: 10px;
 }
 
 .count {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 /* ---------------Color change button---------------*/
@@ -205,7 +208,7 @@ input[type="checkbox"]{
 
 .density {
     margin: 15px 0px 15px 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -214,7 +217,7 @@ input[type="checkbox"]{
     grid-template-columns: 25px 1fr 70px;
     align-items: center;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .bars span:first-child {
@@ -248,27 +251,36 @@ progress::-webkit-progress-value {
     transition: width 0.3s ease;
 }
 
+progress:hover::-webkit-progress-bar {
+    background-color: #2a2d3a;
+}
+
+progress:hover::-webkit-progress-value {
+    background-color: #9668be;
+}
+
 /* ---------------See more button--------------- */
 summary {
-  list-style: none;
-  cursor: pointer;
-  margin-top: 15px;
-  font-size: 14px;
+    display: inline;   
+    list-style: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 summary::after {
-  content: "v";
-  display: inline-block;
-  font-size: 0.9em;
-  transition: transform 0.3s;
+     content: "v";
+    display: inline-block;
+    font-size: 0.9em;
+     transition: transform 0.3s;
 }
 
 details[open] summary::after {
-  transform: rotate(-90deg);
+     transform: rotate(-90deg);
 }
 
 details p {
-  margin-top: 10px;
-  font-size: 12px;
-  color: var(--secondary-text);
+     margin-top: 10px;
+     font-size: 12px;
+     color: var(--secondary-text);
 }
