@@ -16,8 +16,7 @@
     --edges: #2A2D3A;
 }
 
-/* Header Styles and Background */
-
+/* ---------------Header Styles and Background--------------- */
 body {
     background-color: #232631;
     font-family: "Space Grotesk", sans-serif;
@@ -43,7 +42,8 @@ header {
 .logo{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
+    margin-left: -10px;
 }
 
 header p {
@@ -57,10 +57,9 @@ header img {
     height: 30px;
 }
 
-/* Container Styles */
-
+/* ---------------Container Styles--------------- */
 .container {
-    width: 450px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -86,14 +85,13 @@ textarea {
     display: block;
     margin:0px;
 }
-/* Checkboxes */
 
+/* ---------------Checkboxes--------------- */
 label {
     color: var(--secondary-text);
-    font-size: 10px;
+    font-size: 11px;
     margin: 10px 0px 10px 0px;
     display: flex;
-    align-items: center;
     gap: 5px;
 }
 
@@ -109,7 +107,7 @@ input[type="checkbox"]{
 }
 
 
-/* When marked */
+/* ---------------When marked--------------- */
 .check:checked{
     background: white;
 }
@@ -129,19 +127,18 @@ input[type="checkbox"]{
 
 .timer {
     color: var(--secondary-text);
-    font-size: 10px;
+    font-size: 11px;
     margin-top: 10px;
     display: flex;
     margin-left:auto
 }
 
-/* Metric cards */
-
+/* ---------------Metric cards--------------- */
 .stats  {
     display: flex;
     gap: 10px;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .stats div  {
@@ -156,19 +153,19 @@ input[type="checkbox"]{
 
 .purple-card {
     background-color: var(--card-violet);
-    padding: 10px;
+    padding: 15px 15px 15px 8px;
     border-radius: 10px;
 }
 
 .orange-card {
     background-color: var(--card-orange);
-    padding: 10px;
+    padding: 15px 15px 15px 8px;
     border-radius: 10px;
 }
 
 .red-card {
     background-color: var(--card-coral);
-    padding: 10px;
+    padding: 15px 15px 15px 8px;
     border-radius: 10px;
 }
 
@@ -176,21 +173,21 @@ input[type="checkbox"]{
     font-size: 36px;
 }
 
-/* Color change button*/
+/* ---------------Color change button---------------*/
 .change-color {
     background: var(--background-cards);
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 9px;
+    padding: 8px;
     border-radius: 5px;
     display: flex;
     transition: background 0.3s ease, transform 0.3s ease
 }
 
 .change-color img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
 }
 
 .change-color:hover {
@@ -201,15 +198,15 @@ input[type="checkbox"]{
     filter: brightness(0) invert(0)
 }
 
-/* Metrics */
+/* ---------------Metrics--------------- */
 .metrics {
     color: var(--main-text);
 }
 
 .density {
     margin: 15px 0px 15px 0px;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .bars {
@@ -227,7 +224,7 @@ input[type="checkbox"]{
 
 .bars span:last-child {
     text-align: right;
-    font-size: 10px;
+    font-size: 11px;
     color: var(--secondary-text);
 }
 
@@ -249,4 +246,29 @@ progress::-webkit-progress-value {
     background-color: var(--progress-bars);
     border-radius: 8px;
     transition: width 0.3s ease;
+}
+
+/* ---------------See more button--------------- */
+summary {
+  list-style: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+summary::after {
+  content: "v";
+  display: inline-block;
+  font-size: 0.9em;
+  transition: transform 0.3s;
+}
+
+details[open] summary::after {
+  transform: rotate(-90deg);
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--secondary-text);
 }
