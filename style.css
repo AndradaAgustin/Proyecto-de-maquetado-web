@@ -19,7 +19,7 @@
 /* ---------------Header Styles and Background--------------- */
 body {
     background-color: #232631;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Inter", sans-serif;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -161,19 +161,20 @@ input[type="checkbox"]{
 .yellow-card {
     background-image:url('assets/images/Yellow-card.png');
     background-size: cover;
-    padding: 18px 15px 18px 8px;
+    padding: 14px 15px 18px 8px;
     border-radius: 10px;
 }
 
 .orange-card {
     background-image:url('assets/images/Orange-card.png');
     background-size: cover;
-    padding: 18px 15px 18px 8px;
+    padding: 14px 15px 18px 8px;
     border-radius: 10px;
 }
 
 .count {
     font-size: 40px;
+    margin-bottom: 8px
 }
 
 /* ---------------Color change button---------------*/
